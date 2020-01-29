@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.hover-element {
+    width: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.tool-tip {
+    position: fixed;
+    width: 20%;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.tool-tip.active {
+    background-color: rgba(255, 255, 255, .7);
+    opacity: 1;
+    visibility: visible;
+}
+
+.spoiler {
+    background-color: #b8a7a7;
+    width: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.spoiler h3 {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #777777;
+    color: white;
+    font-weight: normal;
+    padding: 10px 20px;
+}
+
+.spoiler .hidden-content {
+    max-height: 0;
+    transition: max-height 1s ease;
+}
+
+.hidden-content.active {
+    max-height: 500px;
+}
+
+.spoiler p {
+    padding: 20px;
+    transition: all 1.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.spoiler p.active {
+    visibility: visible;
+    opacity: 1;
+}

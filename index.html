@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">    
+        <h2>Наводящая подсказка</h2>
+        <div class="flex-row">
+            <div class="hover-element" id="elem-1" data-text="Тут находится контент для первого элемента">Элемент 1</div>
+            <div class="hover-element" id="elem-2" data-text="Это следующий элемент">Элемент 2</div>
+            <div class="hover-element" id="elem-3" data-text="Или как говорят в простонародие - tooltips(или нет)">Элемент 3</div>
+        </div>
+        <hr>
+        <h2>Сворачивающиеся пункты</h2>
+        <div data-spoiler="#spoiler-1" class="spoiler" id="spoiler-1">
+            <h3><span class="fa">+</span>Сворачивающийся пункт</h3>
+            <div class="hidden-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor perspiciatis eius quas inventore dignissimos optio delectus! Itaque, velit eaque.</p>
+            </div>
+        </div>
+        <div data-spoiler="#spoiler-2" class="spoiler" id="spoiler-2">
+            <h3><span class="fa">+</span>Сворачивающийся пункт</h3>
+            <div class="hidden-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia accusantium dolorem quod obcaecati nemo quas a optio deleniti amet, dolore eum rerum praesentium soluta sed ullam, voluptates suscipit vero, labore autem esse. Minima repellat ipsa qui labore porro nam?</p>
+            </div>
+        </div>
+        <div data-spoiler="#spoiler-3" class="spoiler" id="spoiler-3">
+            <h3><span class="fa">+</span>Сворачивающийся пункт</h3>
+            <div class="hidden-content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, in!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
